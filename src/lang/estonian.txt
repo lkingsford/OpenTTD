@@ -2740,6 +2740,13 @@ STR_ABOUT_ORIGINAL_COPYRIGHT                                    :{BLACK}Algne au
 STR_ABOUT_VERSION                                               :{BLACK}OpenTTD osa {REV}
 STR_ABOUT_COPYRIGHT_OPENTTD                                     :{BLACK}OpenTTD {COPYRIGHT}2002-2018 OpenTTD meeskond
 
+# Framerate display window
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+
+
 # Save/load game/scenario
 STR_SAVELOAD_SAVE_CAPTION                                       :{WHITE}Mängu salvestamine
 STR_SAVELOAD_LOAD_CAPTION                                       :{WHITE}Mängu jätkamine
@@ -3031,8 +3038,6 @@ STR_TOWN_POPULATION                                             :{BLACK}Maailma 
 STR_TOWN_VIEW_TOWN_CAPTION                                      :{WHITE}{TOWN}
 STR_TOWN_VIEW_CITY_CAPTION                                      :{WHITE}{TOWN} (Linn)
 STR_TOWN_VIEW_POPULATION_HOUSES                                 :{BLACK}Rahvaarv: {ORANGE}{COMMA}{BLACK}  Ehitisi: {ORANGE}{COMMA}
-STR_TOWN_VIEW_PASSENGERS_LAST_MONTH_MAX                         :{BLACK}Reisijaid eelmisel kuul: {ORANGE}{COMMA}{BLACK}  Enim: {ORANGE}{COMMA}
-STR_TOWN_VIEW_MAIL_LAST_MONTH_MAX                               :{BLACK}Posti eelmisel kuul: {ORANGE}{COMMA}{BLACK}  Enim: {ORANGE}{COMMA}
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH                              :{BLACK}Veoseid linna kasvamiseks:
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_GENERAL             :{ORANGE}{STRING}{RED} vajalik
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_WINTER              :{ORANGE}{STRING}{BLACK} on talvel vajalik
@@ -4256,7 +4261,6 @@ STR_ERROR_TOO_MANY_STATIONS_LOADING                             :{WHITE}Liiga pa
 STR_ERROR_TOO_MANY_STATION_SPECS                                :{WHITE}Liiga palju raudteejaama osasid
 STR_ERROR_TOO_MANY_BUS_STOPS                                    :{WHITE}Liiga palju bussipeatusi
 STR_ERROR_TOO_MANY_TRUCK_STOPS                                  :{WHITE}Liiga palju laadimisplatvorme
-STR_ERROR_TOO_CLOSE_TO_ANOTHER_STATION                          :{WHITE}Mõnele teisele jaamale liiga lähedal
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_DOCK                             :{WHITE}Liiga lähedal teisele dokile
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_AIRPORT                          :{WHITE}Liiga lähedal teisele lennuväljale
 STR_ERROR_CAN_T_RENAME_STATION                                  :{WHITE}Jaama nime ei saa vahetada...

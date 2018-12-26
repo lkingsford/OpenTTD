@@ -2647,6 +2647,13 @@ STR_ABOUT_ORIGINAL_COPYRIGHT                                    :{BLACK}Copyrigh
 STR_ABOUT_VERSION                                               :{BLACK}OpenTTD versiunea {REV}
 STR_ABOUT_COPYRIGHT_OPENTTD                                     :{BLACK}OpenTTD {COPYRIGHT} 2002-2018 Echipa OpenTTD
 
+# Framerate display window
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+
+
 # Save/load game/scenario
 STR_SAVELOAD_SAVE_CAPTION                                       :{WHITE}Salvează joc
 STR_SAVELOAD_LOAD_CAPTION                                       :{WHITE}Încarcă joc
@@ -2932,8 +2939,6 @@ STR_TOWN_POPULATION                                             :{BLACK}Populaţ
 STR_TOWN_VIEW_TOWN_CAPTION                                      :{WHITE}{TOWN}
 STR_TOWN_VIEW_CITY_CAPTION                                      :{WHITE}{TOWN} (Metropolă)
 STR_TOWN_VIEW_POPULATION_HOUSES                                 :{BLACK}Populaţia: {ORANGE}{COMMA}{BLACK}  Locuinţe: {ORANGE}{COMMA}
-STR_TOWN_VIEW_PASSENGERS_LAST_MONTH_MAX                         :{BLACK}Călători luna trecută: {ORANGE}{COMMA}{BLACK}  max: {ORANGE}{COMMA}
-STR_TOWN_VIEW_MAIL_LAST_MONTH_MAX                               :{BLACK}Colete poştale luna trecută: {ORANGE}{COMMA}{BLACK}  max: {ORANGE}{COMMA}
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH                              :{BLACK}Transporturi necesare dezvoltării oraşului:
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_GENERAL             :{ORANGE}{STRING}{RED} necesare
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_WINTER              :{ORANGE}{STRING}{BLACK} necesare iarna
@@ -4152,7 +4157,6 @@ STR_ERROR_TOO_MANY_STATIONS_LOADING                             :{WHITE}Prea mul
 STR_ERROR_TOO_MANY_STATION_SPECS                                :{WHITE}Staţia are prea multe componente
 STR_ERROR_TOO_MANY_BUS_STOPS                                    :{WHITE}Prea multe staţii de autobuz
 STR_ERROR_TOO_MANY_TRUCK_STOPS                                  :{WHITE}Prea multe staţii de camion
-STR_ERROR_TOO_CLOSE_TO_ANOTHER_STATION                          :{WHITE}Prea aproape de altă staţie
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_DOCK                             :{WHITE}Prea aproape de alt port
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_AIRPORT                          :{WHITE}Prea aproape de un alt aeroport
 STR_ERROR_CAN_T_RENAME_STATION                                  :{WHITE}Nu se poate redenumi staţia...

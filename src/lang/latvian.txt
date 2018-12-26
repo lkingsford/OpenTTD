@@ -475,6 +475,7 @@ STR_ABOUT_MENU_SCREENSHOT                                       :Ekrānuzņēmum
 STR_ABOUT_MENU_ZOOMIN_SCREENSHOT                                :Pilnībā pietuvināts ekrānuzņēmums
 STR_ABOUT_MENU_DEFAULTZOOM_SCREENSHOT                           :Noklusējuma mēroga ekrānuzņēmums
 STR_ABOUT_MENU_GIANT_SCREENSHOT                                 :Visas kartes ekrānuzņēmums
+STR_ABOUT_MENU_SHOW_FRAMERATE                                   :Rādīt kadru ātrumu
 STR_ABOUT_MENU_ABOUT_OPENTTD                                    :Par 'OpenTTD'
 STR_ABOUT_MENU_SPRITE_ALIGNER                                   :Gariņu līdzinātājs
 STR_ABOUT_MENU_TOGGLE_BOUNDING_BOXES                            :Pārslēgt saistītās kastes
@@ -1273,6 +1274,7 @@ STR_CONFIG_SETTING_LANDSCAPE                                    :Ainava: {STRING
 STR_CONFIG_SETTING_LAND_GENERATOR                               :Zemes radītājs: {STRING}
 STR_CONFIG_SETTING_LAND_GENERATOR_ORIGINAL                      :Sākotnējais
 STR_CONFIG_SETTING_LAND_GENERATOR_TERRA_GENESIS                 :TerraGenesis
+STR_CONFIG_SETTING_TERRAIN_TYPE_HELPTEXT                        :(Tikai TerraGenesis) Ainavas kalnainība
 STR_CONFIG_SETTING_OIL_REF_EDGE_DISTANCE                        :Maksimālais attālums no kartes malas naftas pārstrādes rūpnīcām: {STRING}
 STR_CONFIG_SETTING_OIL_REF_EDGE_DISTANCE_HELPTEXT               :Naftas pārstrādes rūpnīcas ir būvējamas tikai kartes malu tuvumā, salu kartēm tas ir pie krasta
 STR_CONFIG_SETTING_SNOWLINE_HEIGHT                              :Sniega līnijas augstums: {STRING}
@@ -1561,6 +1563,7 @@ STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Lielpilsētu vi
 STR_CONFIG_SETTING_DISTRIBUTION_MANUAL                          :manuāli
 STR_CONFIG_SETTING_DISTRIBUTION_ASYMMETRIC                      :asimetriska
 STR_CONFIG_SETTING_DISTRIBUTION_SYMMETRIC                       :simetriska
+STR_CONFIG_SETTING_DISTRIBUTION_DEFAULT_HELPTEXT                :"nesimetriski" nozīmē, ka patvaļīgu kravas daudzumu var nosūtīt abos virzienos."manuāli" nozīmē, ka šīm kravām netiks veikta automātiska izplatīšana.
 STR_CONFIG_SETTING_LINKGRAPH_ACCURACY                           :Sadales precizitāte: {STRING}
 STR_CONFIG_SETTING_DEMAND_SIZE_HELPTEXT                         :Uzstādod šo mazāk par 100% liks simetriskajai sadalei izturēties vairāk kā asimetriskajai. Mazāk kravas ar varu tiks sūtīts atpakaļ ja noteikts daudzums tiks sūtīts uz piestātni. Ja jūs uzstādīsiet to uz 0% simetriskā sadale izturēsies tā pat kā asimetriskā.
 
@@ -2625,6 +2628,16 @@ STR_ABOUT_ORIGINAL_COPYRIGHT                                    :{BLACK}Oriģin�
 STR_ABOUT_VERSION                                               :{BLACK}OpenTTD versija {REV}
 STR_ABOUT_COPYRIGHT_OPENTTD                                     :{BLACK}OpenTTD {COPYRIGHT} 2002-2018 OpenTTD darba grupa
 
+# Framerate display window
+STR_FRAMERATE_SPEED_FACTOR                                      :{WHITE}pašreizējās spēles ātruma pakāpe: {DECIMAL}x
+STR_FRAMERATE_SPEED_FACTOR_TOOLTIP                              :{BLACK}Cik ātri spēle šobrīd iet salīdzinot ar standarta ātrumu.
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+############ Leave those lines in this order!!
+STR_FRAMETIME_CAPTION_VIDEO                                     :{WHITE}video izeja
+############ End of leave-in-this-order
+
+
 # Save/load game/scenario
 STR_SAVELOAD_SAVE_CAPTION                                       :{WHITE}Saglabāt spēli
 STR_SAVELOAD_LOAD_CAPTION                                       :{WHITE}Ielādēt spēli
@@ -2775,6 +2788,7 @@ STR_SAVE_PRESET_EDITBOX_TOOLTIP                                 :{BLACK}Pašlaik
 STR_SAVE_PRESET_CANCEL                                          :{BLACK}Atcelt
 STR_SAVE_PRESET_CANCEL_TOOLTIP                                  :{BLACK}Nemainīt iepriekšiestatījumu
 STR_SAVE_PRESET_SAVE                                            :{BLACK}Saglabāt
+STR_SAVE_PRESET_SAVE_TOOLTIP                                    :{BLACK}pašreizējos iestatījumus saglābāt kā sākontnējos iestatījumus
 
 # NewGRF parameters window
 STR_NEWGRF_PARAMETERS_CAPTION                                   :{WHITE}Mainīt NewGRF parametrus
@@ -2908,8 +2922,6 @@ STR_TOWN_POPULATION                                             :{BLACK}Pasaules
 STR_TOWN_VIEW_TOWN_CAPTION                                      :{WHITE}{TOWN}
 STR_TOWN_VIEW_CITY_CAPTION                                      :{WHITE}{TOWN} (lielpilsēta)
 STR_TOWN_VIEW_POPULATION_HOUSES                                 :{BLACK}Iedzīvotāji: {ORANGE}{COMMA}{BLACK}  Mājas: {ORANGE}{COMMA}
-STR_TOWN_VIEW_PASSENGERS_LAST_MONTH_MAX                         :{BLACK}Pasažieri pagājušajā mēnesī: {ORANGE}{COMMA}{BLACK}  maksimāli: {ORANGE}{COMMA}
-STR_TOWN_VIEW_MAIL_LAST_MONTH_MAX                               :{BLACK}Pasts pagājušajā mēnesī: {ORANGE}{COMMA}{BLACK}  maksimāli: {ORANGE}{COMMA}
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH                              :{BLACK}Krava nepieciešama pilsētas attīstībai:
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_GENERAL             :{ORANGE}{STRING}{RED} nepieciešams
 STR_TOWN_VIEW_CARGO_FOR_TOWNGROWTH_REQUIRED_WINTER              :{ORANGE}{STRING}{BLACK} nepieciešams ziemā
@@ -3214,6 +3226,7 @@ STR_INDUSTRY_VIEW_PRODUCTION_LAST_MONTH_TITLE                   :{BLACK}Iepriek�
 STR_INDUSTRY_VIEW_TRANSPORTED                                   :{YELLOW}{CARGO_LONG}{STRING}{BLACK} (aizvests {COMMA}%)
 STR_INDUSTRY_VIEW_LOCATION_TOOLTIP                              :{BLACK}Centrēt galveno skatu uz ražotni. Ctrl+klikšķis atvērs skatu uz ražotni jaunā skatlaukā
 STR_INDUSTRY_VIEW_PRODUCTION_LEVEL                              :{BLACK}Ražošanas līmenis: {YELLOW}{COMMA}%
+STR_INDUSTRY_VIEW_INDUSTRY_ANNOUNCED_CLOSURE                    :{YELLOW}Nozare ir paziņojusi par nenovēršamu slēgšanu!
 
 ############ range for requires starts
 STR_INDUSTRY_VIEW_REQUIRES_CARGO                                :{BLACK}Nepieciešams: {YELLOW}{STRING}{STRING}
@@ -3288,6 +3301,7 @@ STR_GROUP_REMOVE_ALL_VEHICLES                                   :Novākt visus t
 
 STR_GROUP_RENAME_CAPTION                                        :{BLACK}Pārdēvēt grupu
 
+STR_GROUP_PROFIT_THIS_YEAR                                      :Ienākumi šajā gadā:
 
 # Build vehicle window
 STR_BUY_VEHICLE_TRAIN_RAIL_CAPTION                              :Jauni dzelzceļa transportlīdzekļi
@@ -4053,6 +4067,7 @@ STR_ERROR_EXCAVATION_WOULD_DAMAGE                               :{WHITE}Rakšana
 STR_ERROR_ALREADY_AT_SEA_LEVEL                                  :{WHITE}... jau ir jūras līmenī
 STR_ERROR_TOO_HIGH                                              :{WHITE}... pārāk augstu
 STR_ERROR_ALREADY_LEVELLED                                      :{WHITE}... jau ir līdzens
+STR_ERROR_BRIDGE_TOO_HIGH_AFTER_LOWER_LAND                      :{WHITE}Tilta otrs gals ir pārāk augstu.
 
 # Company related errors
 STR_ERROR_CAN_T_CHANGE_COMPANY_NAME                             :{WHITE}Uzņēmuma nosaukumu nevar mainīt...
@@ -4119,7 +4134,6 @@ STR_ERROR_TOO_MANY_STATIONS_LOADING                             :{WHITE}Pārāk 
 STR_ERROR_TOO_MANY_STATION_SPECS                                :{WHITE}Pārāk daudz dzelzceļa stacijas daļu
 STR_ERROR_TOO_MANY_BUS_STOPS                                    :{WHITE}Pārāk daudz autobusu pieturvietu
 STR_ERROR_TOO_MANY_TRUCK_STOPS                                  :{WHITE}Pārāk daudz kravas automobiļu staciju
-STR_ERROR_TOO_CLOSE_TO_ANOTHER_STATION                          :{WHITE}Pārāk tuvu citai stacijai/iekraušanas zonai
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_DOCK                             :{WHITE}Pārāk tuvu citai piestātnei
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_AIRPORT                          :{WHITE}Pārāk tuvu citai lidostai
 STR_ERROR_CAN_T_RENAME_STATION                                  :{WHITE}Nevar pārdēvēt staciju...
@@ -4267,6 +4281,7 @@ STR_ERROR_YOU_ALREADY_OWN_IT                                    :{WHITE}... tā 
 STR_ERROR_GROUP_CAN_T_CREATE                                    :{WHITE}Nevar izveidot grupu...
 STR_ERROR_GROUP_CAN_T_DELETE                                    :{WHITE}Nevar izdzēst šo grupu...
 STR_ERROR_GROUP_CAN_T_RENAME                                    :{WHITE}Nevar pārdēvēt grupu...
+STR_ERROR_GROUP_CAN_T_SET_PARENT                                :nevar iestatīt vecāku grupu...
 STR_ERROR_GROUP_CAN_T_REMOVE_ALL_VEHICLES                       :{WHITE}Nevar noņemt no šīs grupas visus transportlīdzekļus...
 STR_ERROR_GROUP_CAN_T_ADD_VEHICLE                               :{WHITE}Nevar pievienot transportlīdzekļus šai grupai...
 STR_ERROR_GROUP_CAN_T_ADD_SHARED_VEHICLE                        :{WHITE}Nevar pievienot koplietojamos transportlīdzekļus šai grupai...
